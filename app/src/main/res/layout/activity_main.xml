@@ -22,14 +22,12 @@
 
             <ImageView
                 android:id="@+id/d1_image"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/general_style"
                 android:src="@drawable/leo_big" />
 
             <EditText
                 android:id="@+id/d1_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/general_style"
                 android:hint="" />
         </LinearLayout>
 
@@ -43,14 +41,12 @@
 
             <ImageView
                 android:id="@+id/d2_image"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/general_style"
                 android:src="@drawable/sodoma_big" />
 
             <EditText
                 android:id="@+id/d2_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/general_style"
                 android:hint="" />
         </LinearLayout>
 
@@ -64,14 +60,12 @@
 
             <ImageView
                 android:id="@+id/d3_image"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/general_style"
                 android:src="@drawable/michel_big" />
 
             <EditText
                 android:id="@+id/d3_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/general_style"
                 android:hint="" />
         </LinearLayout>
 
@@ -85,14 +79,12 @@
 
             <ImageView
                 android:id="@+id/d4_image"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/general_style"
                 android:src="@drawable/school_athens" />
 
             <EditText
                 android:id="@+id/d4_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/general_style"
                 android:hint="" />
         </LinearLayout>
 
@@ -106,8 +98,7 @@
                 android:text="@string/d5" />
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/general_style"
                 android:orientation="horizontal">
 
                 <LinearLayout style="@style/checkbox_group_layout_style">
@@ -170,8 +161,7 @@
 
             <RadioGroup
                 android:id="@+id/d6_radio_group"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/general_style"
                 android:orientation="horizontal">
 
                 <RadioButton
@@ -236,8 +226,7 @@
 
             <RadioGroup
                 android:id="@+id/d7_radio_group"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/general_style"
                 android:orientation="horizontal">
 
                 <RadioButton
@@ -305,8 +294,7 @@
 
             <RadioGroup
                 android:id="@+id/d8_radio_group"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/general_style"
                 android:orientation="horizontal">
 
                 <RadioButton
@@ -365,8 +353,7 @@
 
         <Button
             android:id="@+id/submit_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/general_style"
             android:onClick="checkQuiz"
             android:text="Submit" />
     </LinearLayout>
