@@ -1,6 +1,5 @@
 package com.example.utente.quizapp;
 
-
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     final int Q6_ANSWER = R.id.d6_option_two;
     final int Q7_ANSWER = R.id.d7_option_one;
     final int Q8_ANSWER = R.id.d8_option_three;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +82,6 @@ public class MainActivity extends AppCompatActivity {
             incorrectAnswersList.add("Domanda 8");
         }
 
-
         StringBuilder sb = new StringBuilder();
         for (String s : incorrectAnswersList) {
             sb.append(s);
@@ -99,74 +96,60 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
-
     private boolean checkQuestion1() {
-        EditText et = (EditText) findViewById(R.id.d1_edit_text);
+        EditText et = findViewById(R.id.d1_edit_text);
 
         return et.getText().toString().equalsIgnoreCase(Q1_ANSWER);
     }
 
     private boolean checkQuestion2() {
-        EditText et = (EditText) findViewById(R.id.d2_edit_text);
+        EditText et = findViewById(R.id.d2_edit_text);
 
         return et.getText().toString().equalsIgnoreCase(Q2_ANSWER);
     }
 
     private boolean checkQuestion3() {
-        EditText et = (EditText) findViewById(R.id.d3_edit_text);
+        EditText et = findViewById(R.id.d3_edit_text);
 
         return et.getText().toString().equalsIgnoreCase(Q3_ANSWER);
     }
 
     private boolean checkQuestion4() {
-        EditText et = (EditText) findViewById(R.id.d4_edit_text);
+        EditText et = findViewById(R.id.d4_edit_text);
 
         return et.getText().toString().equalsIgnoreCase(Q4_ANSWER);
     }
 
     private boolean checkQuestion5() {
-        CheckBox c1 = (CheckBox) findViewById(R.id.d5_first_checkbox);
-        CheckBox c2 = (CheckBox) findViewById(R.id.d5_second_checkbox);
-        CheckBox c3 = (CheckBox) findViewById(R.id.d5_third_checkbox);
+        CheckBox c1 = findViewById(R.id.d5_first_checkbox);
+        CheckBox c2 = findViewById(R.id.d5_second_checkbox);
+        CheckBox c3 = findViewById(R.id.d5_third_checkbox);
 
-        if (c1.isChecked() && c2.isChecked() && !c3.isChecked()) {
-            return true;
-        }
+        return c1.isChecked() && c2.isChecked() && !c3.isChecked();
 
-        return false;
     }
 
 
     private boolean checkQuestion6() {
-        RadioGroup rg = (RadioGroup) findViewById(R.id.d6_radio_group);
+        RadioGroup rg = findViewById(R.id.d6_radio_group);
 
-        if (rg.getCheckedRadioButtonId() == Q6_ANSWER) {
-            return true;
-        }
+        return rg.getCheckedRadioButtonId() == Q6_ANSWER;
 
-        return false;
     }
 
     private boolean checkQuestion7() {
-        RadioGroup rg = (RadioGroup) findViewById(R.id.d7_radio_group);
+        RadioGroup rg = findViewById(R.id.d7_radio_group);
 
-        if (rg.getCheckedRadioButtonId() == Q7_ANSWER) {
-            return true;
-        }
+        return rg.getCheckedRadioButtonId() == Q7_ANSWER;
 
-        return false;
     }
 
     private boolean checkQuestion8() {
-        RadioGroup rg = (RadioGroup) findViewById(R.id.d8_radio_group);
+        RadioGroup rg = findViewById(R.id.d8_radio_group);
 
-        if (rg.getCheckedRadioButtonId() == Q8_ANSWER) {
-            return true;
-        }
+        return rg.getCheckedRadioButtonId() == Q8_ANSWER;
 
-        return false;
     }
-
 
 }
 
